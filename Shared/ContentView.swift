@@ -17,8 +17,8 @@ struct ContentView: View {
                     Image("Illustration 1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                    Spacer()
                 }
-                Spacer()
             }
             Text("SwiftUI for iOS 14")
                 .fontWeight(.bold)
