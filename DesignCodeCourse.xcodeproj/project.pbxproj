@@ -19,6 +19,12 @@
 		FA9F22FB259F969000778DD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F22E6259F968E00778DD4 /* ContentView.swift */; };
 		FA9F22FC259F969000778DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9F22E7259F969000778DD4 /* Assets.xcassets */; };
 		FA9F22FD259F969000778DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9F22E7259F969000778DD4 /* Assets.xcassets */; };
+		FAE0A031259FD148005F76F6 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A030259FD148005F76F6 /* CourseItem.swift */; };
+		FAE0A032259FD148005F76F6 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A030259FD148005F76F6 /* CourseItem.swift */; };
+		FAE0A03E259FD280005F76F6 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A03D259FD280005F76F6 /* CoursesList.swift */; };
+		FAE0A03F259FD280005F76F6 /* CoursesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A03D259FD280005F76F6 /* CoursesList.swift */; };
+		FAE0A045259FDCAD005F76F6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A044259FDCAD005F76F6 /* Course.swift */; };
+		FAE0A046259FDCAD005F76F6 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0A044259FDCAD005F76F6 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,9 @@
 		FA9F22F4259F969000778DD4 /* DesignCodeCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9F22F6259F969000778DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9F22F7259F969000778DD4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FAE0A030259FD148005F76F6 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		FAE0A03D259FD280005F76F6 /* CoursesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesList.swift; sourceTree = "<group>"; };
+		FAE0A044259FDCAD005F76F6 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				FA9F22E5259F968E00778DD4 /* DesignCodeCourseApp.swift */,
-				FA9F22E6259F968E00778DD4 /* ContentView.swift */,
-				FA464AC3259FA90F00533DC4 /* CourseRow.swift */,
-				FA9F22E7259F969000778DD4 /* Assets.xcassets */,
+				FAE0A035259FD200005F76F6 /* Navigation */,
+				FAE0A03A259FD215005F76F6 /* Items */,
 				FA464AC8259FAB6C00533DC4 /* CoursesView.swift */,
-				FA464ACD259FAE0600533DC4 /* Sidebar.swift */,
+				FAE0A03D259FD280005F76F6 /* CoursesList.swift */,
+				FA9F22E7259F969000778DD4 /* Assets.xcassets */,
+				FAE0A044259FDCAD005F76F6 /* Course.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -100,6 +110,24 @@
 				FA9F22F7259F969000778DD4 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		FAE0A035259FD200005F76F6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FA464ACD259FAE0600533DC4 /* Sidebar.swift */,
+				FA9F22E6259F968E00778DD4 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FAE0A03A259FD215005F76F6 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				FA464AC3259FA90F00533DC4 /* CourseRow.swift */,
+				FAE0A030259FD148005F76F6 /* CourseItem.swift */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,10 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE0A045259FDCAD005F76F6 /* Course.swift in Sources */,
 				FA464ACE259FAE0600533DC4 /* Sidebar.swift in Sources */,
+				FAE0A031259FD148005F76F6 /* CourseItem.swift in Sources */,
 				FA9F22FA259F969000778DD4 /* ContentView.swift in Sources */,
 				FA464AC4259FA90F00533DC4 /* CourseRow.swift in Sources */,
 				FA9F22F8259F969000778DD4 /* DesignCodeCourseApp.swift in Sources */,
+				FAE0A03E259FD280005F76F6 /* CoursesList.swift in Sources */,
 				FA464AC9259FAB6C00533DC4 /* CoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAE0A046259FDCAD005F76F6 /* Course.swift in Sources */,
 				FA464ACF259FAE0600533DC4 /* Sidebar.swift in Sources */,
+				FAE0A032259FD148005F76F6 /* CourseItem.swift in Sources */,
 				FA9F22FB259F969000778DD4 /* ContentView.swift in Sources */,
 				FA464AC5259FA90F00533DC4 /* CourseRow.swift in Sources */,
 				FA9F22F9259F969000778DD4 /* DesignCodeCourseApp.swift in Sources */,
+				FAE0A03F259FD280005F76F6 /* CoursesList.swift in Sources */,
 				FA464ACA259FAB6C00533DC4 /* CoursesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

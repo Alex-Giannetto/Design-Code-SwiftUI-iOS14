@@ -14,10 +14,21 @@ struct Sidebar: View {
             #if os(iOS)
             content
                 .navigationTitle("Learn")
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Image(systemName: "person.crop.circle")
+                    }
+                })
             #else
             content
                 .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
-            
+                .toolbar(content: {
+                    ToolbarItem {
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                            Image(systemName: "person.crop.circle")
+                        }
+                    }
+                })
             #endif
             
             CoursesView()
